@@ -29,7 +29,7 @@
           "date_texte": "Octobre 2026",
           "categorie": "Documentation clinique",
           "resume": "Le Collège des médecins précise quand l'usage d'un système d'IA doit être consigné au dossier et ce qu'il faut y noter. La consignation est nécessaire lorsque le système a accès à des renseignements qui permettent d'identifier le patient, ou lorsqu'il contribue au raisonnement clinique. Une recherche d'information générale, sans données sur un patient, ne l'exige pas. Le médecin note le nom de l'outil, la date, les principales informations fournies et, au besoin, le consentement du patient. S'il écarte une recommandation plausible qui pourrait changer la prise en charge, il inscrit aussi sa décision. Le Collège traite cette recommandation comme un résultat de laboratoire qu'on décide de ne pas retenir.",
-          "audio": "Les audioprothésistes n'ont pas de consigne équivalente. La même grille pourrait guider la note au dossier lorsqu'un outil d'IA rédige la note ou propose une recommandation."
+          "audio": "Les lignes directrices de l'Ordre sur la tenue des dossiers numériques ne traitent pas de l'IA. Cette grille pourrait les compléter lorsqu'un outil rédige la note ou propose une recommandation."
         }
       ]
     },
@@ -70,7 +70,7 @@
     }
   ],
   "questions": [
-    "Le Collège des médecins demande de consigner au dossier l'usage d'un outil d'IA. Une consigne semblable serait-elle utile aux audioprothésistes, et dans quel document de l'Ordre irait-elle ?",
+    "Nos lignes directrices sur la tenue des dossiers numériques exigent déjà le consentement du patient avant toute communication à un tiers. Faut-il préciser comment elles s'appliquent à un scribe d'IA, et ce qu'il faut noter au dossier ?",
     "Les scribes d'IA arrivent dans les établissements publics pour toutes les professions. Combien de nos membres en utilisent déjà en clinique privée, et avec quel consentement du patient ?",
     "L'assistante de Blackberry Hearing aide à déterminer si une personne a besoin d'une évaluation. Où passe la limite entre ce genre d'orientation automatisée et l'exercice de la profession ?"
   ]
