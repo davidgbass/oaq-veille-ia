@@ -68,10 +68,6 @@ section { display: grid; gap: 20px; }
 .doc .corps h4 a { color: var(--encre); text-decoration: none; }
 .doc .corps h4 a:hover { text-decoration: underline; }
 .doc .corps p { margin: 0; max-width: 66ch; }
-.questions { background: var(--puce-fond); border-radius: 8px; padding: 20px 24px; display: grid; gap: 10px; }
-.questions h3 { color: var(--puce-texte); }
-.questions ol { margin: 0; padding-left: 20px; display: grid; gap: 8px; }
-.questions li { max-width: 68ch; }
 footer .cadre { padding-block: 24px 40px; border-top: 1px solid var(--filet); font-size: 13px; color: var(--doux); display: grid; gap: 6px; }
 footer p { margin: 0; max-width: 75ch; }
 

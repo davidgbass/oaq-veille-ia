@@ -3,7 +3,7 @@
 """
 Génère le site de la veille IA clinique à partir des données JSON.
 
-  data/rapports/AAAA-MM.json  un rapport mensuel (résumé, rubriques, documents, questions)
+  data/rapports/AAAA-MM.json  un rapport mensuel (résumé, rubriques, documents ; pas de questions, le CIDP juge)
   data/references.json        documents de référence antérieurs à la veille
 
 Sorties : index.html (liste des rapports, références, à propos) et rapports/AAAA-MM.html.
@@ -63,9 +63,10 @@ def verifier(rapports, refs):
         for rub in r["rubriques"]:
             for d in rub["documents"]:
                 doc(d, r["mois"])
-        for t in [r["resume"]] + r["questions"]:
-            if re.search("[—–]", t):
-                erreurs.append(f"{r['mois']} : tiret dans le résumé ou une question")
+        if r.get("questions"):
+            erreurs.append(f"{r['mois']} : pas de questions sur le site, c'est le CIDP qui juge de l'importance")
+        if re.search("[—–]", r["resume"]):
+            erreurs.append(f"{r['mois']} : tiret dans le résumé")
     for d in refs:
         doc(d, "références")
     return erreurs
@@ -79,7 +80,7 @@ def nb_docs(r):
 
 def minutes(r):
     mots = nb_mots(r["resume"]) + sum(nb_mots(d["resume"]) + nb_mots(d.get("audio", "")) for d in docs_de(r)) \
-        + sum(nb_mots(q) for q in r["questions"])
+
     return max(1, round(mots / MOTS_MINUTE))
 
 def type_lien(url):
@@ -191,11 +192,6 @@ def page_rapport(r, precedent, suivant):
         rubriques.append(f'      <div class="rubrique">\n        <h3>{e(rub["titre"])}</h3>\n' + "\n".join(blocs) + "\n      </div>")
     if not rubriques:
         rubriques.append('      <p class="vide">Rien de marquant ce mois-ci.</p>')
-    questions = ""
-    if r["questions"]:
-        sommaire.append('        <li><a class="som-rub" href="#questions">Questions pour le CIDP</a></li>')
-        questions = ('      <div class="questions" id="questions">\n        <h3>Questions pour le CIDP</h3>\n        <ol>\n'
-                     + "\n".join(f"          <li>{e(q)}</li>" for q in r["questions"]) + "\n        </ol>\n      </div>")
     nav_rapports = '    <nav class="suite" aria-label="Autres rapports">\n'
     nav_rapports += (f'      <a href="{precedent["mois"]}.html" rel="prev">← {e(precedent["titre"])}</a>\n' if precedent else "      <span></span>\n")
     nav_rapports += (f'      <a href="{suivant["mois"]}.html" rel="next">{e(suivant["titre"])} →</a>\n' if suivant else "      <span></span>\n")
@@ -212,7 +208,6 @@ def page_rapport(r, precedent, suivant):
       </aside>
       <article class="rapport" id="documents" aria-labelledby="t-rapport">
 {chr(10).join(rubriques)}
-{questions}
       </article>
     </div>
 {nav_rapports}"""
@@ -251,7 +246,7 @@ def page_accueil(rapports, refs):
     corps = f"""    <section id="rapports" aria-labelledby="t-rapports">
       <div>
         <h2 id="t-rapports">Rapports</h2>
-        <p class="intro">Un rapport par mois, au plus cinq documents, qui se lit en quelques minutes. Chacun se termine par quelques questions pour le comité.</p>
+        <p class="intro">Un rapport par mois, au plus cinq documents, qui se lit en quelques minutes. Le comité juge lui-même de leur importance.</p>
       </div>
       <div class="liste-rapports">
 {chr(10).join(lignes)}
