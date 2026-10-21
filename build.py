@@ -159,7 +159,7 @@ def page(titre, corps, prefixe, entete, actif):
 </html>
 """
 
-SURTITRE = '    <span class="surtitre">Ordre des audioprothésistes du Québec · Plan stratégique 2026-2029, action 2.2.2</span>'
+SURTITRE = '    <span class="surtitre">Ordre des audioprothésistes du Québec · Plan stratégique 2026-2029, actions 2.2.1 et 2.2.2</span>'
 
 def bloc_doc(d, ancre):
     audio = ""
@@ -271,13 +271,14 @@ def page_accueil(rapports, refs):
         <h2 id="t-apropos">À propos</h2>
       </div>
       <div class="apropos">
-        <p>Cette veille répond à l'action 2.2.2 du plan stratégique 2026-2029 de l'Ordre : suivre l'évolution des usages de l'IA dans la pratique audioprothétique. Elle porte sur l'usage de l'IA par les cliniciens, et non sur l'IA intégrée aux aides auditives.</p>
+        <p>Cette veille répond à deux actions du plan stratégique 2026-2029 de l'Ordre, toutes deux confiées au comité d'innovation et de développement professionnel : suivre l'évolution des usages de l'IA dans la pratique audioprothétique (2.2.2), et assurer la vigie des travaux du Conseil interprofessionnel du Québec (CIQ) sur l'IA (2.2.1). Elle porte sur l'usage de l'IA par les cliniciens, et non sur l'IA intégrée aux aides auditives.</p>
         <ul>
           <li>Les sources sont les instances de santé du Québec et du Canada, les 46 ordres professionnels du Québec et la presse. Les ordres de la santé et des relations humaines passent en premier.</li>
           <li>Chaque mois, au plus cinq documents sont retenus, en priorité les orientations d'une autorité québécoise et les données sur l'usage réel.</li>
           <li>Chaque document porte un résumé d'une centaine de mots, rédigé à partir du texte complet.</li>
           <li>Un document n'est retenu que s'il touche les audioprothésistes ou l'Ordre, de près ou de loin. Sa note « Pour les audioprothésistes » dit en quoi.</li>
           <li>Les études scientifiques sont exclues, car le comité en fait déjà la revue.</li>
+          <li>Le suivi des travaux du CIQ réservés à ses membres est transmis au comité par courriel et ne figure pas sur ce site.</li>
         </ul>
       </div>
     </section>"""

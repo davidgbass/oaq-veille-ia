@@ -1,7 +1,9 @@
 # Veille IA clinique
 
 Site public de la veille sur l'usage de l'intelligence artificielle par les cliniciens
-(action 2.2.2 du plan stratégique 2026-2029 de l'OAQ), préparée pour le CIDP.
+(actions 2.2.1 et 2.2.2 du plan stratégique 2026-2029 de l'OAQ), préparée pour le CIDP.
+2.2.1 = vigie des travaux du CIQ sur l'IA : le portail Concerto est consulté chaque mois, mais
+son contenu va seulement dans le courriel au CIDP, jamais ici.
 
 - `data/rapports/AAAA-MM.json` : un rapport mensuel
 - `data/references.json` : documents de référence antérieurs à la veille
