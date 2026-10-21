@@ -29,15 +29,6 @@
           "date_texte": "Octobre 2026",
           "categorie": "Documentation clinique",
           "resume": "Le Collège des médecins précise quand l'usage d'un système d'IA doit être consigné au dossier et ce qu'il faut y noter. La consignation est nécessaire lorsque le système a accès à des renseignements qui permettent d'identifier le patient, ou lorsqu'il contribue au raisonnement clinique. Une recherche d'information générale, sans données sur un patient, ne l'exige pas. Le médecin note le nom de l'outil, la date, les principales informations fournies et, au besoin, le consentement du patient. S'il écarte une recommandation plausible qui pourrait changer la prise en charge, il inscrit aussi sa décision. Le Collège traite cette recommandation comme un résultat de laboratoire qu'on décide de ne pas retenir."
-        },
-        {
-          "titre": "Éléments à considérer avant de choisir un outil d'IA en médecine",
-          "url": "https://www.cmq.org/fr/pratiquer-la-medecine/informations-clinique/intelligence-artificielle/avant-choisir-ia",
-          "organisme": "Collège des médecins",
-          "date": "2026-10-08",
-          "date_texte": "8 octobre 2026",
-          "categorie": "Choix d'un outil",
-          "resume": "Ce texte guide le médecin avant qu'il adopte un outil d'IA. Il présente l'IA comme un soutien à la documentation clinique, à la communication avec les patients et à l'organisation du travail, et parfois comme une aide à la décision. Le médecin reste responsable de l'évaluation, des décisions et des soins. Il n'a pas à devenir expert en IA, mais il doit en comprendre les indications, les limites et les risques, comme il le fait pour un médicament. Le texte traite ensuite des données transmises à l'outil, de la confidentialité, du consentement et de la « boîte noire », soit un raisonnement que l'utilisateur ne peut pas expliquer."
         }
       ]
     },
@@ -54,15 +45,6 @@
           "resume": "Santé Québec Côte-Nord étend à toutes les professions de la santé le scribe d'IA déjà offert aux médecins. Un projet pilote réunit 70 personnes, dont des infirmières, des ergothérapeutes et des physiothérapeutes. Selon le PDG, Jean-François Miron, c'est le premier établissement du Québec à ouvrir la licence à l'ensemble des professions. Avec l'autorisation du patient, l'outil enregistre la conversation, la transcrit et produit la note en quelques secondes. Le professionnel doit vérifier chaque note. La présidente du syndicat des infirmières de la région se demande si la vérification prendra autant de temps que la rédaction. Un chercheur de l'Université de Montréal recommande un déploiement progressif, avec un suivi auprès des équipes."
         },
         {
-          "titre": "L'IA pour aider au besoin de main-d'œuvre médicale sur la Côte-Nord",
-          "url": "https://www.lemanic.ca/2026/10/02/lia-pour-aider-au-besoin-de-main-doeuvre-medicale-sur-la-cote-nord/",
-          "organisme": "Le Manic",
-          "date": "2026-10-02",
-          "date_texte": "2 octobre 2026",
-          "categorie": "Aide à la décision",
-          "resume": "Santé Québec Côte-Nord mise sur trois outils d'IA pour réduire la charge administrative de ses médecins et professionnels. En Basse-Côte-Nord, un projet de recherche teste Bia Assistant, qui aide à décider si un examen par scan est pertinent. L'établissement a aussi conclu une entente avec Milvue, un outil d'imagerie qui repère les fractures et rédige un rapport automatique. Selon le PDG, l'outil pointe le bon endroit dans 99,7 % des cas, ce qui permettrait aux médecins d'urgence de décider sans attendre le radiologiste. Le scribe médical s'ajoute à ces deux outils. Le PDG les présente comme une façon de mieux utiliser le personnel clinique dans une région en pénurie."
-        },
-        {
           "titre": "OntarioMD Survey Reveals that AI is Becoming Part of Clinical Practice",
           "url": "https://www.newswire.ca/news-releases/ontariomd-survey-reveals-that-ai-is-becoming-part-of-clinical-practice-877359823.html",
           "organisme": "OntarioMD",
@@ -70,15 +52,6 @@
           "date_texte": "1er octobre 2026",
           "categorie": "Plusieurs usages",
           "resume": "OntarioMD a sondé en mars 2026 plus de 1 600 médecins, infirmières praticiennes et gestionnaires de cliniques communautaires de l'Ontario. Les deux tiers des répondants (67 %) ont déjà utilisé un outil d'IA en pratique clinique. Le scribe d'IA arrive en tête avec 58 %, loin devant l'aide à la décision clinique (18 %) et l'assistant de boîte de réception (7 %). Le coût, le temps d'installation et l'intégration au travail sont les principaux freins. Les répondants s'inquiètent surtout des risques juridiques, de la confidentialité des données et de la dépendance à l'outil. Pour vérifier la sécurité d'un outil, 72 % se tournent vers les associations provinciales."
-        },
-        {
-          "titre": "AI scribes could reduce physicians' administrative burden, help ease burnout: Study",
-          "url": "https://www.utoronto.ca/news/ai-scribes-could-reduce-physicians-administrative-burden-help-ease-burnout-study",
-          "organisme": "Université de Toronto",
-          "date": "2026-09-22",
-          "date_texte": "22 septembre 2026",
-          "categorie": "Documentation clinique",
-          "resume": "Une équipe de l'Université de Toronto et du Women's College Hospital a mesuré l'effet des scribes d'IA sur le temps de documentation. Neuf médecins de première ligne ont mené chacun quatre consultations simulées, avec et sans l'outil. Le scribe a réduit de 69,1 % le temps nécessaire pour rédiger les notes au dossier. Sans l'outil, la prise de notes occupait plus du tiers de chaque rencontre. Les chercheurs ont aussi observé un effet inattendu : rédiger la note pendant la consultation amenait les médecins à se poser davantage de questions cliniques. Avec le scribe, ils relisaient et corrigeaient plutôt la note après coup. L'étude est parue dans la revue JAMIA Open."
         },
         {
           "titre": "Kildare hearing care company recognised for AI use",

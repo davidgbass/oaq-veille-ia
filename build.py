@@ -10,14 +10,16 @@ Sorties : index.html (liste des rapports + références) et rapports/AAAA-MM.htm
 Le site est public (GitHub Pages) : seules des sources publiques y entrent.
 Les documents du portail Concerto du CIQ n'y vont jamais.
 
-Règle de contenu : chaque document porte un résumé d'une centaine de mots
-(80 à 130). Le script refuse de générer le site si un résumé sort de cette
-fourchette ou si un texte contient un tiret cadratin ou demi-cadratin.
+Règles de contenu : au plus 5 documents par rapport (charge mentale du comité),
+et chaque document porte un résumé d'une centaine de mots (80 à 130). Le script
+refuse de générer le site si un rapport dépasse 5 documents, si un résumé sort
+de cette fourchette ou si un texte contient un tiret cadratin ou demi-cadratin.
 """
 import os, re, sys, json, glob, html, datetime
 
 RACINE = os.path.dirname(os.path.abspath(__file__))
 MOTS_MIN, MOTS_MAX = 80, 130
+DOCS_MAX = 5
 MOIS = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août",
         "septembre", "octobre", "novembre", "décembre"]
 
@@ -39,6 +41,8 @@ def verifier(rapports, refs):
         if "concerto" in d["url"].lower():
             erreurs.append(f"{ou} : lien Concerto interdit sur le site public")
     for r in rapports:
+        if nb_docs(r) > DOCS_MAX:
+            erreurs.append(f"{r['mois']} : {nb_docs(r)} documents, maximum {DOCS_MAX}")
         for rub in r["rubriques"]:
             for d in rub["documents"]:
                 doc(d, r["mois"])
