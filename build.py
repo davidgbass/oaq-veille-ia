@@ -10,6 +10,10 @@ Sorties : index.html (liste des rapports + références) et rapports/AAAA-MM.htm
 Le site est public (GitHub Pages) : seules des sources publiques y entrent.
 Les documents du portail Concerto du CIQ n'y vont jamais.
 
+Champ facultatif « audio » : une ou deux phrases (au plus 45 mots) sur ce qui
+s'applique aux audioprothésistes, seulement quand le document s'y applique.
+Un document qui ne vise que le réseau public ou le gouvernement n'en a pas.
+
 Règles de contenu : au plus 5 documents par rapport (charge mentale du comité),
 et chaque document porte un résumé d'une centaine de mots (80 à 130). Le script
 refuse de générer le site si un rapport dépasse 5 documents, si un résumé sort
@@ -20,6 +24,7 @@ import os, re, sys, json, glob, html, datetime
 RACINE = os.path.dirname(os.path.abspath(__file__))
 MOTS_MIN, MOTS_MAX = 80, 130
 DOCS_MAX = 5
+AUDIO_MAX = 45
 MOIS = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août",
         "septembre", "octobre", "novembre", "décembre"]
 
@@ -35,8 +40,10 @@ def verifier(rapports, refs):
         n = nb_mots(d["resume"])
         if not MOTS_MIN <= n <= MOTS_MAX:
             erreurs.append(f"{ou} : « {d['titre'][:60]} » a {n} mots (attendu {MOTS_MIN} à {MOTS_MAX})")
-        for champ in ("titre", "resume"):
-            if re.search("[—–]", d[champ]):
+        if d.get("audio") and nb_mots(d["audio"]) > AUDIO_MAX:
+            erreurs.append(f"{ou} : la note « Pour les audioprothésistes » de « {d['titre'][:60]} » dépasse {AUDIO_MAX} mots")
+        for champ in ("titre", "resume", "audio"):
+            if re.search("[—–]", d.get(champ, "")):
                 erreurs.append(f"{ou} : tiret dans le champ {champ} de « {d['titre'][:60]} »")
         if "concerto" in d["url"].lower():
             erreurs.append(f"{ou} : lien Concerto interdit sur le site public")
@@ -78,6 +85,7 @@ def page(titre, corps, css, entete):
   <div class="cadre">
     <p>Veille préparée par David Gélinas, président de l'Ordre, pour le comité d'innovation et de développement professionnel. Chaque résumé décrit le contenu du document cité et n'engage pas l'Ordre.</p>
     <p>Sources externes, à titre informatif. Elles ne proviennent pas de l'OAQ ni de la réglementation.</p>
+    <p>Les notes « Pour les audioprothésistes » sont une lecture de la veille, non opposable. Elles ne constituent ni une position de l'Ordre ni un avis juridique.</p>
   </div>
 </footer>
 </body>
@@ -91,9 +99,15 @@ def bloc_doc(d):
           <div class="meta"><span class="org">{e(d['organisme'])}</span><time datetime="{e(d['date'])}">{e(d['date_texte'])}</time><span class="puce">{e(d['categorie'])}</span></div>
           <div class="corps">
             <h4><a href="{e(d['url'])}">{e(d['titre'])}</a></h4>
-            <p>{e(d['resume'])}</p>
+            <p>{e(d['resume'])}</p>{bloc_audio(d)}
           </div>
         </div>"""
+
+def bloc_audio(d):
+    # facultatif : seulement quand le document s'applique à la pratique des audioprothésistes
+    if not d.get("audio"):
+        return ""
+    return f'\n            <p class="audio"><span class="audio-tag">Pour les audioprothésistes</span> {e(d["audio"])}</p>'
 
 def nb_docs(r):
     return sum(len(rub["documents"]) for rub in r["rubriques"])

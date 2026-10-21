@@ -83,3 +83,5 @@ footer p { margin: 0; max-width: 75ch; }
 a.retour { color: #FFFFFF; font-size: 14px; font-weight: 600; text-decoration: none; }
 a.retour:hover { text-decoration: underline; }
 .rapport-tete .surtitre { color: var(--doux); }
+.doc .corps p.audio { border-left: 3px solid var(--vif); padding: 6px 0 6px 12px; background: var(--puce-fond); color: var(--puce-texte); border-radius: 0 6px 6px 0; font-size: 15px; }
+.audio-tag { display: block; font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; margin-bottom: 2px; }

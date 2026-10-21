@@ -28,7 +28,8 @@
           "date": "2026-10",
           "date_texte": "Octobre 2026",
           "categorie": "Documentation clinique",
-          "resume": "Le Collège des médecins précise quand l'usage d'un système d'IA doit être consigné au dossier et ce qu'il faut y noter. La consignation est nécessaire lorsque le système a accès à des renseignements qui permettent d'identifier le patient, ou lorsqu'il contribue au raisonnement clinique. Une recherche d'information générale, sans données sur un patient, ne l'exige pas. Le médecin note le nom de l'outil, la date, les principales informations fournies et, au besoin, le consentement du patient. S'il écarte une recommandation plausible qui pourrait changer la prise en charge, il inscrit aussi sa décision. Le Collège traite cette recommandation comme un résultat de laboratoire qu'on décide de ne pas retenir."
+          "resume": "Le Collège des médecins précise quand l'usage d'un système d'IA doit être consigné au dossier et ce qu'il faut y noter. La consignation est nécessaire lorsque le système a accès à des renseignements qui permettent d'identifier le patient, ou lorsqu'il contribue au raisonnement clinique. Une recherche d'information générale, sans données sur un patient, ne l'exige pas. Le médecin note le nom de l'outil, la date, les principales informations fournies et, au besoin, le consentement du patient. S'il écarte une recommandation plausible qui pourrait changer la prise en charge, il inscrit aussi sa décision. Le Collège traite cette recommandation comme un résultat de laboratoire qu'on décide de ne pas retenir.",
+          "audio": "Les audioprothésistes n'ont pas de consigne équivalente. La même grille pourrait guider la note au dossier lorsqu'un outil d'IA rédige la note ou propose une recommandation."
         }
       ]
     },
@@ -42,7 +43,8 @@
           "date": "2026-10-05",
           "date_texte": "5 octobre 2026",
           "categorie": "Documentation clinique",
-          "resume": "Santé Québec Côte-Nord étend à toutes les professions de la santé le scribe d'IA déjà offert aux médecins. Un projet pilote réunit 70 personnes, dont des infirmières, des ergothérapeutes et des physiothérapeutes. Selon le PDG, Jean-François Miron, c'est le premier établissement du Québec à ouvrir la licence à l'ensemble des professions. Avec l'autorisation du patient, l'outil enregistre la conversation, la transcrit et produit la note en quelques secondes. Le professionnel doit vérifier chaque note. La présidente du syndicat des infirmières de la région se demande si la vérification prendra autant de temps que la rédaction. Un chercheur de l'Université de Montréal recommande un déploiement progressif, avec un suivi auprès des équipes."
+          "resume": "Santé Québec Côte-Nord étend à toutes les professions de la santé le scribe d'IA déjà offert aux médecins. Un projet pilote réunit 70 personnes, dont des infirmières, des ergothérapeutes et des physiothérapeutes. Selon le PDG, Jean-François Miron, c'est le premier établissement du Québec à ouvrir la licence à l'ensemble des professions. Avec l'autorisation du patient, l'outil enregistre la conversation, la transcrit et produit la note en quelques secondes. Le professionnel doit vérifier chaque note. La présidente du syndicat des infirmières de la région se demande si la vérification prendra autant de temps que la rédaction. Un chercheur de l'Université de Montréal recommande un déploiement progressif, avec un suivi auprès des équipes.",
+          "audio": "Ce déploiement vise les établissements publics. Un audioprothésiste en clinique privée qui adopte un scribe devrait lui aussi relire et corriger chaque note avant de la signer."
         },
         {
           "titre": "OntarioMD Survey Reveals that AI is Becoming Part of Clinical Practice",
@@ -51,7 +53,8 @@
           "date": "2026-10-01",
           "date_texte": "1er octobre 2026",
           "categorie": "Plusieurs usages",
-          "resume": "OntarioMD a sondé en mars 2026 plus de 1 600 médecins, infirmières praticiennes et gestionnaires de cliniques communautaires de l'Ontario. Les deux tiers des répondants (67 %) ont déjà utilisé un outil d'IA en pratique clinique. Le scribe d'IA arrive en tête avec 58 %, loin devant l'aide à la décision clinique (18 %) et l'assistant de boîte de réception (7 %). Le coût, le temps d'installation et l'intégration au travail sont les principaux freins. Les répondants s'inquiètent surtout des risques juridiques, de la confidentialité des données et de la dépendance à l'outil. Pour vérifier la sécurité d'un outil, 72 % se tournent vers les associations provinciales."
+          "resume": "OntarioMD a sondé en mars 2026 plus de 1 600 médecins, infirmières praticiennes et gestionnaires de cliniques communautaires de l'Ontario. Les deux tiers des répondants (67 %) ont déjà utilisé un outil d'IA en pratique clinique. Le scribe d'IA arrive en tête avec 58 %, loin devant l'aide à la décision clinique (18 %) et l'assistant de boîte de réception (7 %). Le coût, le temps d'installation et l'intégration au travail sont les principaux freins. Les répondants s'inquiètent surtout des risques juridiques, de la confidentialité des données et de la dépendance à l'outil. Pour vérifier la sécurité d'un outil, 72 % se tournent vers les associations provinciales.",
+          "audio": "Le sondage ne porte pas sur les audioprothésistes. Ses questions pourraient servir de modèle pour mesurer l'usage de l'IA chez les membres de l'Ordre."
         },
         {
           "titre": "Kildare hearing care company recognised for AI use",
@@ -60,7 +63,8 @@
           "date": "2026-10-17",
           "date_texte": "17 octobre 2026",
           "categorie": "Communication avec le patient",
-          "resume": "Blackberry Hearing, une entreprise irlandaise de soins auditifs qui compte plus de 60 cliniques et points de service, a reçu un prix international pour Áine, son assistante virtuelle. Offerte par WhatsApp et par la voix, Áine répond aux questions sur l'audition et aide à déterminer si une personne a besoin d'une évaluation, d'un suivi ou d'un entretien d'appareil. Elle donne aussi de l'information sur les appareils, les prix, les subventions et les garanties. Elle consulte les disponibilités des cliniques en temps réel et prend les rendez-vous jour et nuit. L'entreprise dit vouloir libérer ses audiologistes des demandes de routine. Le prix a été remis par Hearing Health & Technology Matters."
+          "resume": "Blackberry Hearing, une entreprise irlandaise de soins auditifs qui compte plus de 60 cliniques et points de service, a reçu un prix international pour Áine, son assistante virtuelle. Offerte par WhatsApp et par la voix, Áine répond aux questions sur l'audition et aide à déterminer si une personne a besoin d'une évaluation, d'un suivi ou d'un entretien d'appareil. Elle donne aussi de l'information sur les appareils, les prix, les subventions et les garanties. Elle consulte les disponibilités des cliniques en temps réel et prend les rendez-vous jour et nuit. L'entreprise dit vouloir libérer ses audiologistes des demandes de routine. Le prix a été remis par Hearing Health & Technology Matters.",
+          "audio": "C'est le seul document du mois qui vise directement les soins auditifs. Un assistant qui oriente une personne vers une évaluation ou un suivi intervient avant toute rencontre avec un professionnel."
         }
       ]
     }

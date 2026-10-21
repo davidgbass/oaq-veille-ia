@@ -7,7 +7,8 @@
     "date_texte": "2023",
     "categorie": "Déontologie",
     "resume": "Marco Laverdière, avocat et directeur général de l'Ordre des optométristes, et Catherine Régis, professeure de droit à l'Université de Montréal, proposent un prototype de code de déontologie pour l'usage de l'IA par les professionnels de la santé et des relations humaines. Le texte conclut une démarche amorcée en 2019 avec les ordres de ces secteurs. Ses dix énoncés couvrent notamment la formation aux outils et à leurs limites, l'information du patient dont les données alimentent un système, le consentement proportionnel au risque, l'offre d'une solution de rechange en cas de refus et le maintien de la responsabilité professionnelle. Les auteurs recommandent d'en tirer d'abord des guides et des formations, avant toute modification réglementaire.",
-    "ajoute": "2026-10"
+    "ajoute": "2026-10",
+    "audio": "Les dix énoncés visent toutes les professions de la santé, dont l'audioprothésie. Ils peuvent servir de grille pour vérifier ce que le Code de déontologie des audioprothésistes couvre déjà."
   },
   {
     "titre": "Les enjeux transversaux au déploiement et à l'utilisation de l'IA au sein du système professionnel québécois",
@@ -17,7 +18,8 @@
     "date_texte": "21 mars 2022",
     "categorie": "Système professionnel",
     "resume": "Préparé par Jacqueline Corbett et Chris Emmanuel Tchatchouang Wanko pour le Conseil interprofessionnel du Québec, ce rapport cherche comment les ordres professionnels peuvent se préparer à l'arrivée de l'IA. Il repose sur une revue de littérature et sur des entretiens avec des experts. Il relève quatre enjeux communs à toutes les professions : l'évolution constante de l'IA, le rythme de son adoption, la préservation du rôle du professionnel et l'accompagnement des clients et des patients. Il en tire six recommandations, dont fournir des balises claires sur l'imputabilité et la responsabilité, adapter la formation et garantir la priorité de la décision humaine. Le rapport ne relève aucun enjeu propre à un seul secteur d'activité.",
-    "ajoute": "2026-10"
+    "ajoute": "2026-10",
+    "audio": "Les quatre enjeux s'appliquent tels quels à l'audioprothésie, puisque le rapport n'en trouve aucun qui soit propre à un secteur."
   },
   {
     "titre": "Prêt pour l'IA : répondre au défi du développement et du déploiement responsables de l'IA au Québec",
@@ -47,7 +49,8 @@
     "date_texte": "Mise à jour du 14 janvier 2026",
     "categorie": "Documentation clinique",
     "resume": "Le Collège des médecins regroupe sur une page ses consignes sur les logiciels de transcription par IA, publiées de janvier 2025 à janvier 2026. Le médecin doit choisir un outil certifié par Santé Québec et, hors établissement, s'assurer qu'une évaluation des facteurs relatifs à la vie privée a été faite pour son milieu. Le consentement explicite du patient est obligatoire avant l'usage, et un consentement implicite ne suffit pas. Ce consentement doit être renouvelé si le sujet de la rencontre devient plus sensible ou si l'outil change de façon importante. Le médecin relit et corrige chaque note avant de la signer, puis détruit l'enregistrement et la transcription.",
-    "ajoute": "2026-10"
+    "ajoute": "2026-10",
+    "audio": "Ces consignes visent les médecins. Pour un audioprothésiste qui utilise un scribe, elles donnent les questions à se poser : outil certifié, évaluation de la vie privée, consentement explicite et destruction de l'enregistrement."
   },
   {
     "titre": "Logiciels de transcription vocale basés sur l'IA en santé et en services sociaux : considérations pour leur déploiement à grande échelle",
@@ -57,7 +60,8 @@
     "date_texte": "Janvier 2026",
     "categorie": "Documentation clinique",
     "resume": "À la demande du MSSS, l'INESSS fait le point sur les logiciels de transcription vocale par IA et sur les conditions de leur déploiement à grande échelle. Ces outils peuvent améliorer la qualité des notes, réduire le travail administratif et renforcer l'échange avec l'usager. Ils peuvent aussi produire des omissions, des substitutions ou des hallucinations, d'où l'importance de réviser les notes, une responsabilité encadrée par les ordres professionnels. Le MSSS s'appuie sur un consentement implicite des usagers, mais l'INESSS juge pertinent d'obtenir un consentement explicite avant chaque utilisation. Le rapport signale aussi le risque de dépendance à l'outil et de perte de compétence clinique.",
-    "ajoute": "2026-10"
+    "ajoute": "2026-10",
+    "audio": "Le rapport vise l'ensemble des professionnels de la santé et des services sociaux. Ses constats sur la révision des notes et sur le consentement valent aussi pour un audioprothésiste qui utilise un transcripteur."
   },
   {
     "titre": "Dévoilement des principes de développement et d'utilisation de l'intelligence artificielle (IA) générative",
@@ -67,6 +71,7 @@
     "date_texte": "7 décembre 2023",
     "categorie": "IA générative",
     "resume": "Les autorités fédérale, provinciales et territoriales de protection de la vie privée ont présenté à Ottawa des principes pour développer et utiliser l'IA générative dans le respect de la vie privée. Le document explique comment les règles de base s'appliquent à la conception, à la prestation et à l'utilisation des outils d'IA générative. Une organisation doit avoir le pouvoir légal de recueillir les renseignements et obtenir un consentement éclairé lorsqu'il est requis. Elle doit être transparente sur l'usage des renseignements et sur les risques, rendre les outils compréhensibles pour les utilisateurs et protéger le droit à la vie privée. Ces principes visent donc aussi les organisations qui utilisent ces outils.",
-    "ajoute": "2026-10"
+    "ajoute": "2026-10",
+    "audio": "Ces principes s'appliquent à une clinique qui utilise un outil d'IA générative avec des renseignements sur ses patients."
   }
 ]
