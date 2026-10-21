@@ -252,6 +252,16 @@ def page_rapport(r, precedent, suivant):
     <a class="retour" href="../index.html#rapports">← Tous les rapports</a>"""
     return page(f"Veille IA clinique, {r['titre']}", corps, "../", entete, "rapports")
 
+def est_ordre(d):
+    return d["organisme"].startswith(("Ordre", "Collège", "Chambre", "Barreau"))
+
+def rubriques_refs(refs):
+    groupes = [("Ordres professionnels", [d for d in refs if est_ordre(d)]),
+               ("Autorités publiques et recherche", [d for d in refs if not est_ordre(d)])]
+    return "\n".join(
+        f'        <div class="rubrique">\n          <h3>{t}</h3>\n' + "\n".join(bloc_doc(d, "ref-" + slug(d["titre"])) for d in g) + "\n        </div>"
+        for t, g in groupes if g)
+
 def page_accueil(rapports, refs):
     lignes = []
     if rapports:
@@ -283,9 +293,7 @@ def page_accueil(rapports, refs):
       </div>
       <div class="rapport" id="liste-references">
 {filtre("liste-references", len(refs), nb_audio(refs))}
-        <div class="rubrique">
-{chr(10).join(bloc_doc(d, "ref-" + slug(d["titre"])) for d in refs)}
-        </div>
+{rubriques_refs(refs)}
       </div>
     </section>
     <section id="a-propos" aria-labelledby="t-apropos">
@@ -295,7 +303,7 @@ def page_accueil(rapports, refs):
       <div class="apropos">
         <p>Cette veille répond à l'action 2.2.2 du plan stratégique 2026-2029 de l'Ordre : suivre l'évolution des usages de l'IA dans la pratique audioprothétique. Elle porte sur l'usage de l'IA par les cliniciens, et non sur l'IA intégrée aux aides auditives.</p>
         <ul>
-          <li>Les sources sont les instances de santé du Québec et du Canada, les ordres professionnels et la presse.</li>
+          <li>Les sources sont les instances de santé du Québec et du Canada, les 46 ordres professionnels du Québec et la presse. Les ordres de la santé et des relations humaines passent en premier.</li>
           <li>Chaque mois, au plus cinq documents sont retenus, en priorité les orientations d'une autorité québécoise et les données sur l'usage réel.</li>
           <li>Chaque document porte un résumé d'une centaine de mots, rédigé à partir du texte complet.</li>
           <li>La note « Pour les audioprothésistes » n'apparaît que lorsque le document s'applique à la pratique.</li>

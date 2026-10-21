@@ -73,5 +73,49 @@
     "resume": "Les autorités fédérale, provinciales et territoriales de protection de la vie privée ont présenté à Ottawa des principes pour développer et utiliser l'IA générative dans le respect de la vie privée. Le document explique comment les règles de base s'appliquent à la conception, à la prestation et à l'utilisation des outils d'IA générative. Une organisation doit avoir le pouvoir légal de recueillir les renseignements et obtenir un consentement éclairé lorsqu'il est requis. Elle doit être transparente sur l'usage des renseignements et sur les risques, rendre les outils compréhensibles pour les utilisateurs et protéger le droit à la vie privée. Ces principes visent donc aussi les organisations qui utilisent ces outils.",
     "ajoute": "2026-10",
     "audio": "Ces principes s'appliquent à une clinique qui utilise un outil d'IA générative avec des renseignements sur ses patients."
+  },
+  {
+    "titre": "Énoncé de principes pour une utilisation responsable et éthique de l'intelligence artificielle (IA)",
+    "url": "https://www.ooaq.qc.ca/decouvrir/publications-medias/memoires/enonce-principes-utilisation-responsable-ethique-intelligence-artificielle-ia/",
+    "organisme": "Ordre des orthophonistes et audiologistes",
+    "date": "2026-01",
+    "date_texte": "Janvier 2026",
+    "categorie": "Ordre de la santé",
+    "resume": "L'Ordre des orthophonistes et audiologistes du Québec propose une posture professionnelle pour l'usage des systèmes d'IA, que ce soit pour l'aide administrative, la tenue de dossiers, la rédaction ou l'intervention clinique. L'énoncé pose sept principes : primauté de l'intérêt du client, compétence, responsabilité professionnelle, confidentialité, transparence et consentement, pertinence et proportionnalité, équité et inclusion. Le professionnel doit comprendre l'outil, interpréter ses résultats avec vigilance et repérer les erreurs ou les biais. Le consentement libre et éclairé est essentiel, et un refus ne doit jamais réduire la qualité des services. L'IA ne remplace jamais le jugement clinique ni la responsabilité du professionnel.",
+    "audio": "C'est le texte le plus proche de notre pratique, puisqu'il vise aussi les audiologistes. Ses sept principes pourraient servir de base à un énoncé de l'Ordre des audioprothésistes.",
+    "ajoute": "2026-10"
+  },
+  {
+    "titre": "L'utilisation de l'intelligence artificielle par les T.S. et les T.C.F. (avis professionnel)",
+    "url": "https://www.otstcfq.org/wp-content/uploads/2026/04/Avis-SIA-2026-03-26-Rev-1.pdf",
+    "organisme": "Ordre des travailleurs sociaux et des thérapeutes conjugaux et familiaux",
+    "date": "2026-03-26",
+    "date_texte": "26 mars 2026, révisé le 9 avril",
+    "categorie": "Ordre de la santé",
+    "resume": "L'Ordre des travailleurs sociaux et des thérapeutes conjugaux et familiaux offre à ses membres des repères pour réfléchir à l'usage d'un système d'IA, sans décider à leur place. Plus l'outil touche la situation du client, plus la responsabilité du membre est grande. Le membre reste seul responsable des notes et des rapports qu'il signe, même s'ils ont été rédigés avec l'aide d'un outil. L'avis propose d'examiner l'outil, son usage prévu et la relation professionnelle à l'aide de quatre questions : est-ce sécuritaire, utile, explicable et conforme aux valeurs de la profession ? Il rappelle aussi l'évaluation des facteurs relatifs à la vie privée exigée par la Loi 25.",
+    "audio": "Les quatre questions s'appliquent telles quelles à un audioprothésiste qui envisage un outil d'IA. La responsabilité des notes signées rejoint l'exigence de signature de nos lignes directrices sur la tenue des dossiers numériques.",
+    "ajoute": "2026-10"
+  },
+  {
+    "titre": "L'intelligence artificielle dans la pratique professionnelle en psychoéducation (guide de référence)",
+    "url": "https://ordrepsed.qc.ca/wp-content/uploads/2025/06/Lintelligence-artificielle-dans-la-pratique-professionnelle-en-psychoeducation-Guide-de-reference.pdf",
+    "organisme": "Ordre des psychoéducateurs et psychoéducatrices",
+    "date": "2025-06",
+    "date_texte": "Juin 2025",
+    "categorie": "Ordre de la santé",
+    "resume": "L'Ordre des psychoéducateurs et psychoéducatrices du Québec répond aux questions de ses membres sur l'IA en les rattachant aux articles de son code de déontologie. Le guide traite de la compétence, du consentement, de la protection des renseignements personnels, de l'indépendance et de la responsabilité professionnelles. Le membre doit informer son client de l'intégration de l'IA dans sa pratique afin d'obtenir un consentement libre et éclairé. Il doit anonymiser rigoureusement les renseignements qu'il confie à un outil, notamment pour la tenue de dossiers. Le guide rappelle aussi que le membre ne peut éluder sa responsabilité professionnelle, y compris à l'égard des recommandations produites par l'IA.",
+    "audio": "La méthode du guide, une question pratique suivie de l'article du code qui y répond, pourrait servir à un guide de l'Ordre rattaché au Code de déontologie des audioprothésistes.",
+    "ajoute": "2026-10"
+  },
+  {
+    "titre": "Recommandations sur l'impact de l'intelligence artificielle sur la protection du public et la profession infirmière",
+    "url": "https://www.oiiq.org/documents/20147/1306047/Recommandations-sur-l-impact-de-l-intelligence-artificielle-sur-la-protection-du-public-et-la-profession-infirmiere.pdf",
+    "organisme": "Ordre des infirmières et infirmiers",
+    "date": "2024-10-24",
+    "date_texte": "24 octobre 2024",
+    "categorie": "Ordre de la santé",
+    "resume": "Le comité de vigie stratégique de l'Ordre des infirmières et infirmiers du Québec s'est demandé quelles répercussions l'IA aura sur la protection du public et sur la profession. Il a notamment entendu Marco Laverdière présenter son prototype de code de déontologie. Son avis, présenté au conseil d'administration en décembre 2024, formule quatre recommandations : reconnaître l'impact de l'IA en rappelant les responsabilités des infirmières, développer leurs compétences en formation initiale et continue, établir avec les partenaires des balises pour encadrer l'usage de l'IA par les professionnels de la santé, et aider le public à mieux comprendre l'IA en santé. Le comité insiste sur le maintien du jugement clinique.",
+    "audio": "La démarche ressemble à celle de notre CIDP, un comité qui conseille le conseil d'administration sur l'IA. Les quatre recommandations sont transposables à l'Ordre des audioprothésistes.",
+    "ajoute": "2026-10"
   }
 ]

@@ -10,6 +10,11 @@ Site public de la veille sur l'usage de l'intelligence artificielle par les clin
 Le script refuse de générer le site si un résumé n'a pas une centaine de mots (80 à 130),
 si un texte contient un tiret cadratin ou demi-cadratin, ou si un lien pointe vers Concerto.
 
+## Sources
+
+Instances publiques en santé, les 46 ordres professionnels du Québec (ceux de la santé et des
+relations humaines en priorité), le CIQ et la presse. La collecte est mensuelle (le 1er du mois).
+
 ## Sélection : au plus 5 documents par mois
 
 Le rapport doit se lire en dix minutes. Un mois tranquille compte 2 ou 3 documents ; un mois
