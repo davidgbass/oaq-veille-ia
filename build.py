@@ -153,7 +153,7 @@ def page_accueil(rapports, refs):
     <section id="references" aria-labelledby="t-ref">
       <div>
         <h2 id="t-ref">Documents de référence</h2>
-        <p class="intro">Des textes publiés avant le début de la veille qui gardent leur pertinence pour la pratique. La liste s'allonge au fil des rapports.</p>
+        <p class="intro">Les textes de fond publiés avant octobre 2026 par des autorités publiques, des ordres et des chercheurs : cadres, plans, lignes directrices et propositions de normes. Seuls les documents de haut niveau y figurent.</p>
       </div>
       <div class="rapport">
         <div class="rubrique">

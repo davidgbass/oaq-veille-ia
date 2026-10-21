@@ -26,5 +26,13 @@ Exclus : l'IA des fabricants et des appareils, les outils destinés aux citoyens
 scientifiques (le CIDP en fait déjà la revue) et les doublons (deux articles sur la même
 initiative donnent un seul document).
 
+## Documents de référence : haut niveau seulement
+
+Cadres, politiques, plans directeurs, lignes directrices d'une autorité (gouvernement, ordre,
+régulateur) et propositions de normes, comme le prototype de code de déontologie de Laverdière
+et Régis. Les nouvelles, les enquêtes ponctuelles, les études et les directives internes d'un
+organisme n'y entrent pas. Un texte qui vise seulement les organismes publics n'y entre que
+s'il touche directement la pratique clinique.
+
 La collecte vit dans le wiki OAQ-v2 (`scripts/veille_ia_clinique.py`). Seules des sources
 publiques entrent ici. Les documents du portail Concerto du CIQ restent dans le courriel au CIDP.

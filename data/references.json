@@ -1,12 +1,62 @@
 [
   {
-    "titre": "Résultats de l'enquête conjointe sur OpenAI et ChatGPT en matière de protection des renseignements personnels",
-    "url": "https://www.cai.gouv.qc.ca/actualites/resultats-enquete-conjointe-sur-openai-chatgpt",
-    "organisme": "Commission d'accès à l'information",
-    "date": "2026-05-06",
-    "date_texte": "6 mai 2026",
-    "categorie": "Renseignements personnels",
-    "resume": "La Commission d'accès à l'information et trois commissariats à la vie privée, soit ceux du Canada, de la Colombie-Britannique et de l'Alberta, publient le rapport de leur enquête sur OpenAI. Ils concluent que la façon dont ChatGPT a d'abord été entraîné et déployé ne respectait pas les lois sur la protection des renseignements personnels. Les problèmes relevés touchent la collecte excessive, la validité du consentement, la transparence et l'exactitude des renseignements produits sur les personnes. Ils touchent aussi l'accès, la correction et la conservation. Pour le Québec, la Commission conclut qu'OpenAI n'a pas pleinement respecté la loi sur le secteur privé et lui adresse quatre recommandations.",
+    "titre": "Soutenir l'encadrement des pratiques professionnelles en matière d'intelligence artificielle dans le secteur de la santé et des relations humaines. Proposition d'un prototype de code de déontologie",
+    "url": "https://declarationmontreal-iaresponsable.com/wp-content/uploads/2023/02/IA_code_deontologie_sante_V2.pdf",
+    "organisme": "Marco Laverdière et Catherine Régis",
+    "date": "2023",
+    "date_texte": "2023",
+    "categorie": "Déontologie",
+    "resume": "Marco Laverdière, avocat et directeur général de l'Ordre des optométristes, et Catherine Régis, professeure de droit à l'Université de Montréal, proposent un prototype de code de déontologie pour l'usage de l'IA par les professionnels de la santé et des relations humaines. Le texte conclut une démarche amorcée en 2019 avec les ordres de ces secteurs. Ses dix énoncés couvrent notamment la formation aux outils et à leurs limites, l'information du patient dont les données alimentent un système, le consentement proportionnel au risque, l'offre d'une solution de rechange en cas de refus et le maintien de la responsabilité professionnelle. Les auteurs recommandent d'en tirer d'abord des guides et des formations, avant toute modification réglementaire.",
+    "ajoute": "2026-10"
+  },
+  {
+    "titre": "Les enjeux transversaux au déploiement et à l'utilisation de l'IA au sein du système professionnel québécois",
+    "url": "https://collections.banq.qc.ca/document/s/t/l4tBbgnQzgwV4Qays0_kVA",
+    "organisme": "OBVIA, pour le CIQ",
+    "date": "2022-03-21",
+    "date_texte": "21 mars 2022",
+    "categorie": "Système professionnel",
+    "resume": "Préparé par Jacqueline Corbett et Chris Emmanuel Tchatchouang Wanko pour le Conseil interprofessionnel du Québec, ce rapport cherche comment les ordres professionnels peuvent se préparer à l'arrivée de l'IA. Il repose sur une revue de littérature et sur des entretiens avec des experts. Il relève quatre enjeux communs à toutes les professions : l'évolution constante de l'IA, le rythme de son adoption, la préservation du rôle du professionnel et l'accompagnement des clients et des patients. Il en tire six recommandations, dont fournir des balises claires sur l'imputabilité et la responsabilité, adapter la formation et garantir la priorité de la décision humaine. Le rapport ne relève aucun enjeu propre à un seul secteur d'activité.",
+    "ajoute": "2026-10"
+  },
+  {
+    "titre": "Prêt pour l'IA : répondre au défi du développement et du déploiement responsables de l'IA au Québec",
+    "url": "https://conseilinnovation.quebec/wp-content/uploads/2024/02/Rapport_IA_CIQ.pdf",
+    "organisme": "Conseil de l'innovation du Québec",
+    "date": "2024-02",
+    "date_texte": "Février 2024",
+    "categorie": "Encadrement",
+    "resume": "Le Conseil de l'innovation du Québec a mené une réflexion collective sur le développement et l'usage responsables de l'IA au Québec. Son rapport avance 12 recommandations prioritaires et 25 recommandations complémentaires. La première demande d'adopter une loi-cadre propre à l'IA, et la deuxième d'en confier l'application à une autorité indépendante du pouvoir exécutif. Une autre prévoit un programme de formation des formateurs, notamment pour les ordres professionnels, afin d'accélérer la mise à niveau des connaissances en IA. Le rapport attribue aux ordres et à l'Office des professions un rôle clé pour fixer les normes de pratique en IA. Il cite le prototype de Laverdière et Régis comme exemple du travail à mener.",
+    "ajoute": "2026-10"
+  },
+  {
+    "titre": "Plan directeur sur l'intelligence artificielle en santé 2024-2027",
+    "url": "https://publications.msss.gouv.qc.ca/msss/fichiers/2024/24-218-03W.pdf",
+    "organisme": "MSSS",
+    "date": "2024",
+    "date_texte": "2024",
+    "categorie": "Stratégie",
+    "resume": "Ce plan fixe le cadre stratégique de l'IA pour le ministère de la Santé et des Services sociaux, le réseau de la santé et Santé Québec jusqu'en 2027. Il découle de la Stratégie d'intégration de l'IA dans l'administration publique et s'articule en trois volets : fédérer les acteurs, soutenir et prioriser les projets, et encadrer l'utilisation. Ses 16 actions comprennent des lignes directrices sur l'IA responsable, un outil d'évaluation des projets, une directive sur les décisions automatisées et des formations pour le personnel. Parmi ses objectifs, le plan prévoit de collaborer avec les ordres professionnels pour qu'ils tiennent compte de l'IA et de ses effets dans leur réglementation.",
+    "ajoute": "2026-10"
+  },
+  {
+    "titre": "Scribe et intelligence artificielle",
+    "url": "https://cms.cmq.org/files/documents/Pratiquer-medecine/IA/scribe-ia.pdf",
+    "organisme": "Collège des médecins",
+    "date": "2026-01-14",
+    "date_texte": "Mise à jour du 14 janvier 2026",
+    "categorie": "Documentation clinique",
+    "resume": "Le Collège des médecins regroupe sur une page ses consignes sur les logiciels de transcription par IA, publiées de janvier 2025 à janvier 2026. Le médecin doit choisir un outil certifié par Santé Québec et, hors établissement, s'assurer qu'une évaluation des facteurs relatifs à la vie privée a été faite pour son milieu. Le consentement explicite du patient est obligatoire avant l'usage, et un consentement implicite ne suffit pas. Ce consentement doit être renouvelé si le sujet de la rencontre devient plus sensible ou si l'outil change de façon importante. Le médecin relit et corrige chaque note avant de la signer, puis détruit l'enregistrement et la transcription.",
+    "ajoute": "2026-10"
+  },
+  {
+    "titre": "Logiciels de transcription vocale basés sur l'IA en santé et en services sociaux : considérations pour leur déploiement à grande échelle",
+    "url": "https://www.inesss.qc.ca/fileadmin/doc/INESSS/Rapports/Innov_non_pharma/Transcripteurs_IA_EC_INESSS.pdf",
+    "organisme": "INESSS",
+    "date": "2026-01",
+    "date_texte": "Janvier 2026",
+    "categorie": "Documentation clinique",
+    "resume": "À la demande du MSSS, l'INESSS fait le point sur les logiciels de transcription vocale par IA et sur les conditions de leur déploiement à grande échelle. Ces outils peuvent améliorer la qualité des notes, réduire le travail administratif et renforcer l'échange avec l'usager. Ils peuvent aussi produire des omissions, des substitutions ou des hallucinations, d'où l'importance de réviser les notes, une responsabilité encadrée par les ordres professionnels. Le MSSS s'appuie sur un consentement implicite des usagers, mais l'INESSS juge pertinent d'obtenir un consentement explicite avant chaque utilisation. Le rapport signale aussi le risque de dépendance à l'outil et de perte de compétence clinique.",
     "ajoute": "2026-10"
   },
   {
