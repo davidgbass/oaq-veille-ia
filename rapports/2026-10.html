@@ -8,37 +8,74 @@
 <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
+<a class="sauter" href="#contenu">Aller au contenu</a>
+<nav class="barre" aria-label="Navigation principale">
+  <div class="cadre barre-interieur">
+    <a class="marque" href="../index.html">Veille IA clinique</a>
+    <div class="barre-liens">
+      <a href="../index.html#rapports" aria-current="page">Rapports</a>
+      <a href="../index.html#references">Documents de référence</a>
+      <a href="../index.html#a-propos">À propos</a>
+    </div>
+  </div>
+</nav>
 <header class="bandeau">
   <div class="cadre">
     <span class="surtitre">Ordre des audioprothésistes du Québec · Plan stratégique 2026-2029, action 2.2.2</span>
-    <h1>Veille IA clinique</h1>
-    <a class="retour" href="../index.html">Tous les rapports</a>
+    <h1 id="t-rapport">Octobre 2026</h1>
+    <p class="sous-titre">En octobre, le MSSS a publié sa politique d&#x27;encadrement de l&#x27;IA en santé et services sociaux, et le Collège des médecins a précisé comment consigner au dossier l&#x27;usage d&#x27;un outil d&#x27;IA. Le scribe d&#x27;IA gagne du terrain : Santé Québec Côte-Nord l&#x27;ouvre à toutes les professions, et un sondage ontarien indique que 58 % des cliniciens l&#x27;ont déjà utilisé.</p>
+    <p class="faits"><span>5 documents</span><span>4 touchent les audioprothésistes</span><span>Lecture : 4 min</span><span>Publié le 21 octobre 2026</span></p>
+    <a class="retour" href="../index.html#rapports">← Tous les rapports</a>
   </div>
 </header>
-<main>
+<main id="contenu">
   <div class="cadre">
-    <article class="rapport" aria-labelledby="t-rapport">
-      <div class="rapport-tete">
-        <span class="surtitre">Rapport mensuel · 5 documents</span>
-        <h2 id="t-rapport">Octobre 2026</h2>
-        <p class="resume">En octobre, le MSSS a publié sa politique d&#x27;encadrement de l&#x27;IA en santé et services sociaux, et le Collège des médecins a précisé comment consigner au dossier l&#x27;usage d&#x27;un outil d&#x27;IA. Le scribe d&#x27;IA gagne du terrain : Santé Québec Côte-Nord l&#x27;ouvre à toutes les professions, et un sondage ontarien indique que 58 % des cliniciens l&#x27;ont déjà utilisé.</p>
+    <div class="rapport-grille">
+      <aside class="sommaire" aria-label="Dans ce rapport">
+        <details open>
+          <summary>Dans ce rapport</summary>
+          <ol>
+        <li><span class="som-rub">Orientations publiques</span>
+          <ol>
+            <li><a href="#politique-ministerielle-d-encadrement-de-l-intelligence-arti">MSSS</a></li>
+          </ol></li>
+        <li><span class="som-rub">Ordres et organismes professionnels</span>
+          <ol>
+            <li><a href="#l-utilisation-d-un-sia-et-la-tenue-des-dossiers">Collège des médecins</a> <span class="pastille" title="Touche les audioprothésistes">ap.</span></li>
+          </ol></li>
+        <li><span class="som-rub">Dans les milieux cliniques</span>
+          <ol>
+            <li><a href="#sante-quebec-cote-nord-deploie-l-intelligence-artificielle">Radio-Canada</a> <span class="pastille" title="Touche les audioprothésistes">ap.</span></li>
+            <li><a href="#ontariomd-survey-reveals-that-ai-is-becoming-part-of-clinica">OntarioMD</a> <span class="pastille" title="Touche les audioprothésistes">ap.</span></li>
+            <li><a href="#kildare-hearing-care-company-recognised-for-ai-use">Kildare Nationalist (Irlande)</a> <span class="pastille" title="Touche les audioprothésistes">ap.</span></li>
+          </ol></li>
+        <li><a class="som-rub" href="#questions">Questions pour le CIDP</a></li>
+          </ol>
+        </details>
+      </aside>
+      <article class="rapport" id="documents" aria-labelledby="t-rapport">
+      <div class="outils">
+        <label class="bascule"><input type="checkbox" class="filtre-audio"> Seulement ce qui touche les audioprothésistes (4)</label>
+        <span class="compte-filtre" data-compte="documents" aria-live="polite">5 documents</span>
       </div>
       <div class="rubrique">
         <h3>Orientations publiques</h3>
-        <div class="doc">
+        <div class="doc" id="politique-ministerielle-d-encadrement-de-l-intelligence-arti">
           <div class="meta"><span class="org">MSSS</span><time datetime="2026-10-15">15 octobre 2026</time><span class="puce">Encadrement</span></div>
           <div class="corps">
-            <h4><a href="https://publications.msss.gouv.qc.ca/msss/document-004061/">Politique ministérielle d&#x27;encadrement de l&#x27;intelligence artificielle en santé et services sociaux</a></h4>
+            <h4><a href="https://publications.msss.gouv.qc.ca/msss/document-004061/" target="_blank" rel="noopener">Politique ministérielle d&#x27;encadrement de l&#x27;intelligence artificielle en santé et services sociaux</a></h4>
+            <div class="source">Page Web · publications.msss.gouv.qc.ca <button type="button" class="copier" data-ancre="politique-ministerielle-d-encadrement-de-l-intelligence-arti">Copier le lien</button></div>
             <p>Le ministère de la Santé et des Services sociaux encadre l&#x27;usage de tous les types d&#x27;intelligence artificielle dans son portefeuille. La politique vise les organismes publics qui relèvent de la ministre et leur personnel, mais aussi les fournisseurs et les prestataires qui agissent en leur nom, y compris pour les systèmes déjà en service. Elle vise à instaurer un processus uniforme de gestion des risques sur tout le cycle de vie d&#x27;un système et précise les rôles et responsabilités de chacun. La confidentialité des renseignements de santé figure parmi ses principes directeurs. Le texte s&#x27;appuie sur trois lois, dont la Loi sur les renseignements de santé et de services sociaux, et sur les normes ISO en IA.</p>
           </div>
         </div>
       </div>
       <div class="rubrique">
         <h3>Ordres et organismes professionnels</h3>
-        <div class="doc">
+        <div class="doc a-audio" id="l-utilisation-d-un-sia-et-la-tenue-des-dossiers">
           <div class="meta"><span class="org">Collège des médecins</span><time datetime="2026-10">Octobre 2026</time><span class="puce">Documentation clinique</span></div>
           <div class="corps">
-            <h4><a href="https://www.cmq.org/fr/pratiquer-la-medecine/informations-clinique/intelligence-artificielle/sia-tenue-dossiers">L&#x27;utilisation d&#x27;un SIA et la tenue des dossiers</a></h4>
+            <h4><a href="https://www.cmq.org/fr/pratiquer-la-medecine/informations-clinique/intelligence-artificielle/sia-tenue-dossiers" target="_blank" rel="noopener">L&#x27;utilisation d&#x27;un SIA et la tenue des dossiers</a></h4>
+            <div class="source">Page Web · cmq.org <button type="button" class="copier" data-ancre="l-utilisation-d-un-sia-et-la-tenue-des-dossiers">Copier le lien</button></div>
             <p>Le Collège des médecins précise quand l&#x27;usage d&#x27;un système d&#x27;IA doit être consigné au dossier et ce qu&#x27;il faut y noter. La consignation est nécessaire lorsque le système a accès à des renseignements qui permettent d&#x27;identifier le patient, ou lorsqu&#x27;il contribue au raisonnement clinique. Une recherche d&#x27;information générale, sans données sur un patient, ne l&#x27;exige pas. Le médecin note le nom de l&#x27;outil, la date, les principales informations fournies et, au besoin, le consentement du patient. S&#x27;il écarte une recommandation plausible qui pourrait changer la prise en charge, il inscrit aussi sa décision. Le Collège traite cette recommandation comme un résultat de laboratoire qu&#x27;on décide de ne pas retenir.</p>
             <p class="audio"><span class="audio-tag">Pour les audioprothésistes</span> Les audioprothésistes n&#x27;ont pas de consigne équivalente. La même grille pourrait guider la note au dossier lorsqu&#x27;un outil d&#x27;IA rédige la note ou propose une recommandation.</p>
           </div>
@@ -46,32 +83,35 @@
       </div>
       <div class="rubrique">
         <h3>Dans les milieux cliniques</h3>
-        <div class="doc">
+        <div class="doc a-audio" id="sante-quebec-cote-nord-deploie-l-intelligence-artificielle">
           <div class="meta"><span class="org">Radio-Canada</span><time datetime="2026-10-05">5 octobre 2026</time><span class="puce">Documentation clinique</span></div>
           <div class="corps">
-            <h4><a href="https://ici.radio-canada.ca/nouvelle/2289544/ia-medical-prise-note-scribe">Santé Québec Côte-Nord déploie l&#x27;intelligence artificielle</a></h4>
+            <h4><a href="https://ici.radio-canada.ca/nouvelle/2289544/ia-medical-prise-note-scribe" target="_blank" rel="noopener">Santé Québec Côte-Nord déploie l&#x27;intelligence artificielle</a></h4>
+            <div class="source">Page Web · ici.radio-canada.ca <button type="button" class="copier" data-ancre="sante-quebec-cote-nord-deploie-l-intelligence-artificielle">Copier le lien</button></div>
             <p>Santé Québec Côte-Nord étend à toutes les professions de la santé le scribe d&#x27;IA déjà offert aux médecins. Un projet pilote réunit 70 personnes, dont des infirmières, des ergothérapeutes et des physiothérapeutes. Selon le PDG, Jean-François Miron, c&#x27;est le premier établissement du Québec à ouvrir la licence à l&#x27;ensemble des professions. Avec l&#x27;autorisation du patient, l&#x27;outil enregistre la conversation, la transcrit et produit la note en quelques secondes. Le professionnel doit vérifier chaque note. La présidente du syndicat des infirmières de la région se demande si la vérification prendra autant de temps que la rédaction. Un chercheur de l&#x27;Université de Montréal recommande un déploiement progressif, avec un suivi auprès des équipes.</p>
             <p class="audio"><span class="audio-tag">Pour les audioprothésistes</span> Ce déploiement vise les établissements publics. Un audioprothésiste en clinique privée qui adopte un scribe devrait lui aussi relire et corriger chaque note avant de la signer.</p>
           </div>
         </div>
-        <div class="doc">
+        <div class="doc a-audio" id="ontariomd-survey-reveals-that-ai-is-becoming-part-of-clinica">
           <div class="meta"><span class="org">OntarioMD</span><time datetime="2026-10-01">1er octobre 2026</time><span class="puce">Plusieurs usages</span></div>
           <div class="corps">
-            <h4><a href="https://www.newswire.ca/news-releases/ontariomd-survey-reveals-that-ai-is-becoming-part-of-clinical-practice-877359823.html">OntarioMD Survey Reveals that AI is Becoming Part of Clinical Practice</a></h4>
+            <h4><a href="https://www.newswire.ca/news-releases/ontariomd-survey-reveals-that-ai-is-becoming-part-of-clinical-practice-877359823.html" target="_blank" rel="noopener">OntarioMD Survey Reveals that AI is Becoming Part of Clinical Practice</a></h4>
+            <div class="source">Page Web · newswire.ca <button type="button" class="copier" data-ancre="ontariomd-survey-reveals-that-ai-is-becoming-part-of-clinica">Copier le lien</button></div>
             <p>OntarioMD a sondé en mars 2026 plus de 1 600 médecins, infirmières praticiennes et gestionnaires de cliniques communautaires de l&#x27;Ontario. Les deux tiers des répondants (67 %) ont déjà utilisé un outil d&#x27;IA en pratique clinique. Le scribe d&#x27;IA arrive en tête avec 58 %, loin devant l&#x27;aide à la décision clinique (18 %) et l&#x27;assistant de boîte de réception (7 %). Le coût, le temps d&#x27;installation et l&#x27;intégration au travail sont les principaux freins. Les répondants s&#x27;inquiètent surtout des risques juridiques, de la confidentialité des données et de la dépendance à l&#x27;outil. Pour vérifier la sécurité d&#x27;un outil, 72 % se tournent vers les associations provinciales.</p>
             <p class="audio"><span class="audio-tag">Pour les audioprothésistes</span> Le sondage ne porte pas sur les audioprothésistes. Ses questions pourraient servir de modèle pour mesurer l&#x27;usage de l&#x27;IA chez les membres de l&#x27;Ordre.</p>
           </div>
         </div>
-        <div class="doc">
+        <div class="doc a-audio" id="kildare-hearing-care-company-recognised-for-ai-use">
           <div class="meta"><span class="org">Kildare Nationalist (Irlande)</span><time datetime="2026-10-17">17 octobre 2026</time><span class="puce">Communication avec le patient</span></div>
           <div class="corps">
-            <h4><a href="https://www.kildare-nationalist.ie/news/kildare-hearing-care-company-recognised-for-ai-use_arid-20331309.html">Kildare hearing care company recognised for AI use</a></h4>
+            <h4><a href="https://www.kildare-nationalist.ie/news/kildare-hearing-care-company-recognised-for-ai-use_arid-20331309.html" target="_blank" rel="noopener">Kildare hearing care company recognised for AI use</a></h4>
+            <div class="source">Page Web · kildare-nationalist.ie <button type="button" class="copier" data-ancre="kildare-hearing-care-company-recognised-for-ai-use">Copier le lien</button></div>
             <p>Blackberry Hearing, une entreprise irlandaise de soins auditifs qui compte plus de 60 cliniques et points de service, a reçu un prix international pour Áine, son assistante virtuelle. Offerte par WhatsApp et par la voix, Áine répond aux questions sur l&#x27;audition et aide à déterminer si une personne a besoin d&#x27;une évaluation, d&#x27;un suivi ou d&#x27;un entretien d&#x27;appareil. Elle donne aussi de l&#x27;information sur les appareils, les prix, les subventions et les garanties. Elle consulte les disponibilités des cliniques en temps réel et prend les rendez-vous jour et nuit. L&#x27;entreprise dit vouloir libérer ses audiologistes des demandes de routine. Le prix a été remis par Hearing Health &amp; Technology Matters.</p>
             <p class="audio"><span class="audio-tag">Pour les audioprothésistes</span> C&#x27;est le seul document du mois qui vise directement les soins auditifs. Un assistant qui oriente une personne vers une évaluation ou un suivi intervient avant toute rencontre avec un professionnel.</p>
           </div>
         </div>
       </div>
-      <div class="questions">
+      <div class="questions" id="questions">
         <h3>Questions pour le CIDP</h3>
         <ol>
           <li>Le Collège des médecins demande de consigner au dossier l&#x27;usage d&#x27;un outil d&#x27;IA. Une consigne semblable serait-elle utile aux audioprothésistes, et dans quel document de l&#x27;Ordre irait-elle ?</li>
@@ -79,7 +119,12 @@
           <li>L&#x27;assistante de Blackberry Hearing aide à déterminer si une personne a besoin d&#x27;une évaluation. Où passe la limite entre ce genre d&#x27;orientation automatisée et l&#x27;exercice de la profession ?</li>
         </ol>
       </div>
-    </article>
+      </article>
+    </div>
+    <nav class="suite" aria-label="Autres rapports">
+      <span></span>
+      <span></span>
+    </nav>
   </div>
 </main>
 <footer>
@@ -89,5 +134,42 @@
     <p>Les notes « Pour les audioprothésistes » sont une lecture de la veille, non opposable. Elles ne constituent ni une position de l'Ordre ni un avis juridique.</p>
   </div>
 </footer>
+<script>
+(function () {
+  var CLE = "veille-ia-audio";
+  var cases = document.querySelectorAll("input.filtre-audio");
+  function appliquer(actif) {
+    document.documentElement.classList.toggle("filtre-actif", actif);
+    cases.forEach(function (c) { c.checked = actif; });
+    document.querySelectorAll("[data-compte]").forEach(function (el) {
+      var bloc = document.getElementById(el.getAttribute("data-compte"));
+      if (!bloc) return;
+      var tous = bloc.querySelectorAll(".doc").length;
+      var vus = actif ? bloc.querySelectorAll(".doc.a-audio").length : tous;
+      el.textContent = actif ? vus + " sur " + tous + " documents affichés" : tous + " documents";
+    });
+  }
+  if (window.matchMedia && window.matchMedia("(max-width: 860px)").matches) {
+    document.querySelectorAll(".sommaire details").forEach(function (d) { d.open = false; });
+  }
+  var depart = false;
+  try { depart = localStorage.getItem(CLE) === "1"; } catch (x) {}
+  appliquer(depart);
+  cases.forEach(function (c) {
+    c.addEventListener("change", function () {
+      try { localStorage.setItem(CLE, c.checked ? "1" : "0"); } catch (x) {}
+      appliquer(c.checked);
+    });
+  });
+  document.querySelectorAll("button.copier").forEach(function (b) {
+    b.addEventListener("click", function () {
+      var url = location.href.split("#")[0] + "#" + b.getAttribute("data-ancre");
+      var fini = function () { b.textContent = "Lien copié"; setTimeout(function () { b.textContent = "Copier le lien"; }, 2000); };
+      if (navigator.clipboard) navigator.clipboard.writeText(url).then(fini, function () { location.hash = b.getAttribute("data-ancre"); });
+      else location.hash = b.getAttribute("data-ancre");
+    });
+  });
+})();
+</script>
 </body>
 </html>
