@@ -112,20 +112,13 @@ header.bandeau .cadre { padding-block: 32px 28px; }
 a.som-rub:hover { color: var(--encre); }
 .sommaire ol ol a { color: var(--texte); text-decoration: none; }
 .sommaire ol ol a:hover { color: var(--encre); text-decoration: underline; }
-.pastille { display: inline-block; margin-left: 6px; font-size: 11px; font-weight: 700; color: var(--puce-texte); background: var(--puce-fond); border-radius: 999px; padding: 0 6px; }
 
-.outils { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 16px; padding: 10px 14px; background: var(--fond); border: 1px solid var(--filet); border-radius: 6px; font-size: 14px; }
-.bascule { display: inline-flex; align-items: center; gap: 8px; cursor: pointer; font-weight: 600; }
-.bascule input { width: 18px; height: 18px; accent-color: #004250; }
-.compte-filtre { color: var(--doux); font-variant-numeric: tabular-nums; }
-.filtre-actif .doc:not(.a-audio) { display: none; }
-.filtre-actif .rubrique:not(:has(.a-audio)) { display: none; }
 
 .doc { scroll-margin-top: 72px; }
 .doc .source { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; font-size: 13px; color: var(--doux); }
 button.copier { font: inherit; font-size: 12px; color: var(--encre); background: none; border: 1px solid var(--filet); border-radius: 999px; padding: 1px 10px; cursor: pointer; }
 button.copier:hover { border-color: var(--encre); }
-button.copier:focus-visible, .bascule input:focus-visible, .sommaire summary:focus-visible { outline: 2px solid var(--vif); outline-offset: 2px; }
+button.copier:focus-visible, .sommaire summary:focus-visible { outline: 2px solid var(--vif); outline-offset: 2px; }
 
 a.lien-bloc { color: inherit; text-decoration: none; border-radius: 6px; padding-inline: 8px; margin-inline: -8px; }
 a.lien-bloc:hover { background: var(--surface); }
@@ -146,7 +139,7 @@ a.lien-bloc:hover .mois { text-decoration: underline; }
   .sommaire details[open] summary { padding-bottom: 10px; }
 }
 @media print {
-  nav.barre, .sauter, .outils, button.copier, .suite, .sommaire, .dernier, a.retour { display: none !important; }
+  nav.barre, .sauter, button.copier, .suite, .sommaire, .dernier, a.retour { display: none !important; }
   header.bandeau { background: none; color: #000; }
   header.bandeau .sous-titre, .faits, .surtitre { color: #333 !important; }
   .rapport-grille { display: block; }

@@ -10,9 +10,10 @@ Sorties : index.html (liste des rapports, références, à propos) et rapports/A
 Le site est public (GitHub Pages) : seules des sources publiques y entrent.
 Les documents du portail Concerto du CIQ n'y vont jamais.
 
-Champ facultatif « audio » : une ou deux phrases (au plus 45 mots) sur ce qui
-s'applique aux audioprothésistes, seulement quand le document s'y applique.
-Un document qui ne vise que le réseau public ou le gouvernement n'en a pas.
+Champ obligatoire « audio » : une ou deux phrases (au plus 45 mots) qui disent en
+quoi le document touche les audioprothésistes ou l'Ordre, de près ou de loin.
+Un document qui ne les touche pas n'a pas sa place sur le site (règle de David,
+2026-10-21) : le script refuse de générer le site s'il manque une note.
 
 Règles de contenu : au plus 5 documents par rapport (charge mentale du comité),
 et chaque document porte un résumé d'une centaine de mots (80 à 130). Le script
@@ -47,7 +48,9 @@ def verifier(rapports, refs):
         n = nb_mots(d["resume"])
         if not MOTS_MIN <= n <= MOTS_MAX:
             erreurs.append(f"{ou} : « {d['titre'][:60]} » a {n} mots (attendu {MOTS_MIN} à {MOTS_MAX})")
-        if d.get("audio") and nb_mots(d["audio"]) > AUDIO_MAX:
+        if not d.get("audio"):
+            erreurs.append(f"{ou} : « {d['titre'][:60]} » n'a pas de note « Pour les audioprothésistes » : s'il ne nous touche pas, il ne va pas sur le site")
+        elif nb_mots(d["audio"]) > AUDIO_MAX:
             erreurs.append(f"{ou} : la note « Pour les audioprothésistes » de « {d['titre'][:60]} » dépasse {AUDIO_MAX} mots")
         for champ in ("titre", "resume", "audio"):
             if re.search("[—–]", d.get(champ, "")):
@@ -74,9 +77,6 @@ def docs_de(r):
 def nb_docs(r):
     return len(docs_de(r))
 
-def nb_audio(docs):
-    return sum(1 for d in docs if d.get("audio"))
-
 def minutes(r):
     mots = nb_mots(r["resume"]) + sum(nb_mots(d["resume"]) + nb_mots(d.get("audio", "")) for d in docs_de(r)) \
         + sum(nb_mots(q) for q in r["questions"])
@@ -100,31 +100,9 @@ def prochain(mois):
 # ---------------- Gabarit ----------------
 SCRIPT = """<script>
 (function () {
-  var CLE = "veille-ia-audio";
-  var cases = document.querySelectorAll("input.filtre-audio");
-  function appliquer(actif) {
-    document.documentElement.classList.toggle("filtre-actif", actif);
-    cases.forEach(function (c) { c.checked = actif; });
-    document.querySelectorAll("[data-compte]").forEach(function (el) {
-      var bloc = document.getElementById(el.getAttribute("data-compte"));
-      if (!bloc) return;
-      var tous = bloc.querySelectorAll(".doc").length;
-      var vus = actif ? bloc.querySelectorAll(".doc.a-audio").length : tous;
-      el.textContent = actif ? vus + " sur " + tous + " documents affichés" : tous + " documents";
-    });
-  }
   if (window.matchMedia && window.matchMedia("(max-width: 860px)").matches) {
     document.querySelectorAll(".sommaire details").forEach(function (d) { d.open = false; });
   }
-  var depart = false;
-  try { depart = localStorage.getItem(CLE) === "1"; } catch (x) {}
-  appliquer(depart);
-  cases.forEach(function (c) {
-    c.addEventListener("change", function () {
-      try { localStorage.setItem(CLE, c.checked ? "1" : "0"); } catch (x) {}
-      appliquer(c.checked);
-    });
-  });
   document.querySelectorAll("button.copier").forEach(function (b) {
     b.addEventListener("click", function () {
       var url = location.href.split("#")[0] + "#" + b.getAttribute("data-ancre");
@@ -183,18 +161,12 @@ def page(titre, corps, prefixe, entete, actif):
 
 SURTITRE = '    <span class="surtitre">Ordre des audioprothésistes du Québec · Plan stratégique 2026-2029, action 2.2.2</span>'
 
-def filtre(cible, n_tous, n_audio):
-    return f"""      <div class="outils">
-        <label class="bascule"><input type="checkbox" class="filtre-audio"> Seulement ce qui touche les audioprothésistes ({n_audio})</label>
-        <span class="compte-filtre" data-compte="{cible}" aria-live="polite">{n_tous} documents</span>
-      </div>"""
-
 def bloc_doc(d, ancre):
     audio = ""
     if d.get("audio"):
         # facultatif : seulement quand le document s'applique à la pratique des audioprothésistes
         audio = f'\n            <p class="audio"><span class="audio-tag">Pour les audioprothésistes</span> {e(d["audio"])}</p>'
-    return f"""        <div class="doc{' a-audio' if d.get('audio') else ''}" id="{ancre}">
+    return f"""        <div class="doc" id="{ancre}">
           <div class="meta"><span class="org">{e(d['organisme'])}</span><time datetime="{e(d['date'])}">{e(d['date_texte'])}</time><span class="puce">{e(d['categorie'])}</span></div>
           <div class="corps">
             <h4><a href="{e(d['url'])}" target="_blank" rel="noopener">{e(d['titre'])}</a></h4>
@@ -213,7 +185,7 @@ def page_rapport(r, precedent, suivant):
         for d in rub["documents"]:
             a = slug(d["titre"])
             ancres[d["titre"]] = a
-            items.append(f'            <li><a href="#{a}">{e(d["organisme"])}</a>{" <span class=\"pastille\" title=\"Touche les audioprothésistes\">ap.</span>" if d.get("audio") else ""}</li>')
+            items.append(f'            <li><a href="#{a}">{e(d["organisme"])}</a></li>')
             blocs.append(bloc_doc(d, a))
         sommaire.append(f'        <li><span class="som-rub">{e(rub["titre"])}</span>\n          <ol>\n' + "\n".join(items) + "\n          </ol></li>")
         rubriques.append(f'      <div class="rubrique">\n        <h3>{e(rub["titre"])}</h3>\n' + "\n".join(blocs) + "\n      </div>")
@@ -239,7 +211,6 @@ def page_rapport(r, precedent, suivant):
         </details>
       </aside>
       <article class="rapport" id="documents" aria-labelledby="t-rapport">
-{filtre("documents", len(docs), nb_audio(docs))}
 {chr(10).join(rubriques)}
 {questions}
       </article>
@@ -248,7 +219,7 @@ def page_rapport(r, precedent, suivant):
     entete = f"""{SURTITRE}
     <h1 id="t-rapport">{e(r['titre'])}</h1>
     <p class="sous-titre">{e(r['resume'])}</p>
-    <p class="faits"><span>{len(docs)} documents</span><span>{nb_audio(docs)} touchent les audioprothésistes</span><span>Lecture : {minutes(r)} min</span><span>Publié le {date_longue(r['publie'])}</span></p>
+    <p class="faits"><span>{len(docs)} documents</span><span>Lecture : {minutes(r)} min</span><span>Publié le {date_longue(r['publie'])}</span></p>
     <a class="retour" href="../index.html#rapports">← Tous les rapports</a>"""
     return page(f"Veille IA clinique, {r['titre']}", corps, "../", entete, "rapports")
 
@@ -273,7 +244,7 @@ def page_accueil(rapports, refs):
     for r in rapports:
         docs = docs_de(r)
         lignes.append(f"""        <a class="rapport-ligne lien-bloc" href="rapports/{r['mois']}.html">
-          <div><div class="mois">{e(r['titre'])}</div><div class="compte">{len(docs)} documents · {nb_audio(docs)} touchent les audioprothésistes · {minutes(r)} min</div></div>
+          <div><div class="mois">{e(r['titre'])}</div><div class="compte">{len(docs)} documents · {minutes(r)} min</div></div>
           <p>{e(r['resume'])} <span class="lire">Lire le rapport →</span></p>
         </a>""")
     refs = sorted(refs, key=lambda d: d["date"], reverse=True)
@@ -292,7 +263,6 @@ def page_accueil(rapports, refs):
         <p class="intro">Les textes de fond publiés avant octobre 2026 par des autorités publiques, des ordres et des chercheurs : cadres, plans, lignes directrices et propositions de normes. Seuls les documents de haut niveau y figurent.</p>
       </div>
       <div class="rapport" id="liste-references">
-{filtre("liste-references", len(refs), nb_audio(refs))}
 {rubriques_refs(refs)}
       </div>
     </section>
@@ -306,7 +276,7 @@ def page_accueil(rapports, refs):
           <li>Les sources sont les instances de santé du Québec et du Canada, les 46 ordres professionnels du Québec et la presse. Les ordres de la santé et des relations humaines passent en premier.</li>
           <li>Chaque mois, au plus cinq documents sont retenus, en priorité les orientations d'une autorité québécoise et les données sur l'usage réel.</li>
           <li>Chaque document porte un résumé d'une centaine de mots, rédigé à partir du texte complet.</li>
-          <li>La note « Pour les audioprothésistes » n'apparaît que lorsque le document s'applique à la pratique.</li>
+          <li>Un document n'est retenu que s'il touche les audioprothésistes ou l'Ordre, de près ou de loin. Sa note « Pour les audioprothésistes » dit en quoi.</li>
           <li>Les études scientifiques sont exclues, car le comité en fait déjà la revue.</li>
         </ul>
       </div>

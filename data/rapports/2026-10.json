@@ -2,22 +2,8 @@
   "mois": "2026-10",
   "titre": "Octobre 2026",
   "publie": "2026-10-21",
-  "resume": "En octobre, le MSSS a publié sa politique d'encadrement de l'IA en santé et services sociaux, et le Collège des médecins a précisé comment consigner au dossier l'usage d'un outil d'IA. Le scribe d'IA gagne du terrain : Santé Québec Côte-Nord l'ouvre à toutes les professions, et un sondage ontarien indique que 58 % des cliniciens l'ont déjà utilisé.",
+  "resume": "En octobre, le Collège des médecins a précisé comment consigner au dossier l'usage d'un outil d'IA. Le scribe d'IA gagne du terrain : Santé Québec Côte-Nord l'ouvre à toutes les professions, et un sondage ontarien indique que 58 % des cliniciens l'ont déjà utilisé.",
   "rubriques": [
-    {
-      "titre": "Orientations publiques",
-      "documents": [
-        {
-          "titre": "Politique ministérielle d'encadrement de l'intelligence artificielle en santé et services sociaux",
-          "url": "https://publications.msss.gouv.qc.ca/msss/document-004061/",
-          "organisme": "MSSS",
-          "date": "2026-10-15",
-          "date_texte": "15 octobre 2026",
-          "categorie": "Encadrement",
-          "resume": "Le ministère de la Santé et des Services sociaux encadre l'usage de tous les types d'intelligence artificielle dans son portefeuille. La politique vise les organismes publics qui relèvent de la ministre et leur personnel, mais aussi les fournisseurs et les prestataires qui agissent en leur nom, y compris pour les systèmes déjà en service. Elle vise à instaurer un processus uniforme de gestion des risques sur tout le cycle de vie d'un système et précise les rôles et responsabilités de chacun. La confidentialité des renseignements de santé figure parmi ses principes directeurs. Le texte s'appuie sur trois lois, dont la Loi sur les renseignements de santé et de services sociaux, et sur les normes ISO en IA."
-        }
-      ]
-    },
     {
       "titre": "Ordres et organismes professionnels",
       "documents": [

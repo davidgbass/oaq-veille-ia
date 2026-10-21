@@ -31,12 +31,11 @@ Exclus : l'IA des fabricants et des appareils, les outils destinés aux citoyens
 scientifiques (le CIDP en fait déjà la revue) et les doublons (deux articles sur la même
 initiative donnent un seul document).
 
-## Note « Pour les audioprothésistes »
+## Note « Pour les audioprothésistes » : obligatoire
 
-Champ `audio`, facultatif : une ou deux phrases (au plus 45 mots) sur ce qui peut
-s'appliquer à la pratique des audioprothésistes. On le remplit seulement quand c'est le cas,
-et on le laisse vide pour un texte qui ne vise que le réseau public ou le gouvernement. C'est
-une lecture de la veille, non opposable, et le pied de page le dit.
+Un document n'entre sur le site que s'il touche les audioprothésistes ou l'Ordre, de près ou
+de loin. Le champ `audio` (au plus 45 mots) dit en quoi ; `build.py` refuse un document qui
+n'en a pas. C'est une lecture de la veille, non opposable, et le pied de page le dit.
 
 ## Documents de référence : haut niveau seulement
 
